@@ -5,9 +5,14 @@ Copy "FreeVirtualKeyboard" folder to "C:\Qt\<6.*.*>\< mingw_64 or msvc2019_64>\q
 
 ## Use the plugin in the project
 On main.cpp add:
-'''app.setProperty("QT_IM_MODULE", QVariant("freevirtualkeyboard"));'''
-On main.qml add:
+'''cpp
+app.setProperty("QT_IM_MODULE", QVariant("freevirtualkeyboard"));
 '''
+On main.qml add:
+
+'''cpp
+    import QtQuick.FreeVirtualKeyboard
+    //...
     InputPanel {
         id: inputPanel
         anchors.left: parent.left
