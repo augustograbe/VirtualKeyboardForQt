@@ -1,16 +1,16 @@
 # VirtualKeyboardForQt
 ## Plugin installation
-Copy "freevirtualkeyboardplugin.dll" to "C:\Qt\<6.*.*>\< mingw_64 or msvc2019_64>\plugins\platforminputcontexts"
-Copy "FreeVirtualKeyboard" folder to "C:\Qt\<6.*.*>\< mingw_64 or msvc2019_64>\qml"
+- Copy "freevirtualkeyboardplugin.dll" to "C:\Qt\<6.*.*>\< mingw_64 or msvc2019_64>\plugins\platforminputcontexts"
+- Copy "FreeVirtualKeyboard" folder to "C:\Qt\<6.*.*>\< mingw_64 or msvc2019_64>\qml"
 
 ## Use the plugin in the project
-On main.cpp add:
-'''cpp
+- On main.cpp add:
+```cpp
 app.setProperty("QT_IM_MODULE", QVariant("freevirtualkeyboard"));
-'''
-On main.qml add:
+```
+- On main.qml add:
 
-'''cpp
+```qml
     import QtQuick.FreeVirtualKeyboard
     //...
     InputPanel {
@@ -40,4 +40,4 @@ On main.qml add:
             }
         }
     }
-    '''
+```
